@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url('Imagens de Fundo/IMG 2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left top;
+	background-size: 1400px 700px;
+}
+header{
+	display: flex;
+	background-color: #98FB98;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+	padding: 25px;
+	height: 110px;
+	font-size: 25px;
+}
+section {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 40px;
+	padding: 20px;
+	justify-content: space-around;
+	align-content: space-between;
+}
+article{
+	width: 400px;
+	display: grid;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	justify-content: center;
+}
+img{
+    max-width: 100%;
+    height: 600px;
+    border-radius: 8px;
+	align-items: center;
+	justify-content: space-around;
+}
+aside{
+	display: flex;
+	text-align: center-left;
+	align-items: center;
+	justify-content: center;
+}
+#oi{
+	display:flex;
+	height: 50px;
+}
+footer{
+	display: flex;
+	background-color:#98FB98;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+ label {
+	display: block;
+    margin-bottom: 8px;
+}
+#logopacifico{
+	width: 5%;
+	height: 5%;
+}
+#final{
+	display: flex;
+	gap: 5px;
+}
+@media screen and (max-width: 700px) {
+    .final {
+        grid-template-columns: auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: none; /* Remove o fundo */
+    }
+    header, footer {
+        text-align: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    header aside {
+        display: none;
+    }
+    section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    section article {
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    #logopacifico {
+        width: 20%;
+        height: auto;
+    }
+}
+
+	
+
+
