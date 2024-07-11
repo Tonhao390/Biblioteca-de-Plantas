@@ -71,15 +71,15 @@ footer{
 	height: 5%;
 }
 #final{
-	display: flex;
+	display: grid;
 	gap: 5px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
     .final {
         grid-template-columns: auto;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
     body {
         background-image: none; /* Remove o fundo */
     }
@@ -92,7 +92,7 @@ footer{
         display: none;
     }
     section {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         gap: 20px;
     }
     section article {
